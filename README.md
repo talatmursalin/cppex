@@ -11,4 +11,4 @@ requires [pathogen](https://github.com/tpope/vim-pathogen)
 should be just like any other plugin.
 
 ### Usage
-press <F8> to compile and run c/cpp program.
+press **F8** to compile and run c/cpp program.
