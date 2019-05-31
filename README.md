@@ -8,7 +8,8 @@ cppex is just a wrapper. The whole plugin depends on [neoterm](https://github.co
 
 ### Installation
 should be just like any other plugin.
-requires [pathogen](https://github.com/tpope/vim-pathogeni) (in case of manual installation i.e git clone dir to bundle dir)
 
 ### Usage
-run ```enforce()``` to compile and run c/cpp program.
+run ```call ExEnforce()``` to compile and run c/cpp program.
+add ```nnoremap <F8> :call ExEnforce() <CR>``` to your init.vim/.vimrc for 
+convenience

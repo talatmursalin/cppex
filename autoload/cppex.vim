@@ -2,20 +2,13 @@ function ChangeMode(key)
     exec 'normal!' a:key
 endfunction
 
-function RunCommand(ft)
-    if ft=='cpp'
-        call CompileAndRunCpp()
-    elseif ft=='c'
-	call CompileAndRunC()
-    elseif ft=='python'
-	call RunPython()
-    else
-	T echo -e "Executor Command Not Found. Run Manually..."
+function RunCommand(com)
+    exec a:com
 endfunction
 
-function Enforce()
+function cppex#Enforce(com)
     write
-    call RunCommand(&filetype)
+    call RunCommand(a:com)
     wincmd j
     call ChangeMode('i')
 endfunction
