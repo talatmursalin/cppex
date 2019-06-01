@@ -11,5 +11,11 @@ should be just like any other plugin.
 
 ### Usage
 run ```call ExEnforce()``` to compile and run c/cpp program.
-add ```nnoremap <F8> :call ExEnforce() <CR>``` to your init.vim/.vimrc for 
-convenience
+add to your init.vim/.vimrc for convenience
+```sh
+nnoremap <F8> :call ExEnforce() <CR>
+let g:neoterm_default_mod='belowright' " open terminal in bottom split
+let g:neoterm_size=16 " terminal split size
+let g:neoterm_autoscroll=1 " scroll to the bottom when running a command
+``` 
+
